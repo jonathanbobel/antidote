@@ -1,0 +1,12 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMaxYMax meet">
+    <!-- icons -->
+    <symbol id="hamburger" viewBox="0 0 459 459" >
+		<path d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z"/>
+    </symbol>
+
+    <symbol id="close" viewBox="0 0 357 357" >
+        <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+			214.2,178.5"/>    
+    </symbol>
+
+</svg>

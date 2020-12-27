@@ -1,0 +1,310 @@
+@import "variables";
+@import "nav";
+@import "treatment";
+@import "therapist";
+@import "partners";
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  background: $background;
+}
+
+.container {
+  max-width: 1330px !important;
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+#main {
+  padding-top: 230px;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 110px;
+
+    .jumbotron.first .col img {
+      width: 50%;
+      margin: 0 25% 1em;
+    }
+
+    .jumbotron.bio .col img {
+      width: 70%;
+      margin: 0 15% 1em;
+    }
+  }
+}
+
+.jumbotron {
+  padding: 2em 0 0;
+  margin-bottom: 0;
+  background: $background;
+
+  h1 {
+    font-size: 2em;
+    font-family: $eb;
+    text-align: center;
+    padding: 0 1em;
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    font-family: $eb;
+    font-size: 92px;
+    color: $h2;
+  }
+
+  h3 {
+    font-family: $eb;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .hero {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 50px;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 2em;
+    }
+    img {
+      width: 100%;
+    }
+    h2 {
+      position: absolute;
+      bottom: -24px;
+      left: 100px;
+      line-height: 1;
+      @media screen and (max-width: 992px) {
+        left: 10px;
+        font-size: 44px;
+        bottom: -18px;
+      }
+    }
+  }
+
+  a {
+    //transition: 0.2s;
+    font-size: 1em;
+    color: $dark-grey;
+
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+
+  .col {
+    img {
+      width: 100%;
+    }
+  }
+
+  &.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: $dark-grey;
+    padding: 35px 0 20px;
+  }
+
+  &.about {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 20%;
+    background: $background;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      margin: 0;
+    }
+    .definition {
+      color: $definition;
+      font-family: $eb;
+      h1 {
+        text-align: left;
+        font-size: 40px;
+        line-height: 1;
+        margin: 0 0 5px;
+        padding: 0;
+      }
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+  &.bio {
+    background: $fade-pearl;
+    padding: 2em 0;
+
+    @media screen and (min-width: 992px) {
+      padding: 2em 0 1em;
+    }
+
+    img {
+      padding: 2em;
+    }
+  }
+}
+
+.right .line {
+  width: 1px;
+  height: 1px;
+  background: black;
+  /*background-position: left top;*/
+  *-webkit-transition: width 0.1s;
+  position: absolute;
+  top: 33px;
+  left: 0;
+}
+
+.left .line {
+  width: 1px;
+  height: 1px;
+  background: black;
+  /*background-position: left top;*/
+  *-webkit-transition: width 0.1s;
+  position: absolute;
+  top: 33px;
+  right: 0;
+}
+
+#chapters {
+  background-image: url(../img/back_grays_2.png);
+  background-size: 40%;
+  // background-position: calc(100% + 20px) 0;
+  background-position: calc(50% - 27px) 50%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  min-height: 650px;
+  position: relative;
+  width: 992px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    background-size: 100%;
+
+    .chapter {
+      position: relative !important;
+      top: auto !important;
+      right: auto !important;
+      left: auto !important;
+      bottom: auto !important;
+      margin: 10px 0 !important;
+      width: 100% !important;
+      min-height: 100px !important;
+      height: auto;
+
+      &.line {
+        display: none;
+      }
+    }
+  }
+
+  .chapter {
+    width: 500px;
+    min-height: 200px;
+    position: absolute;
+    margin: 50px 0;
+    display: flex;
+
+    ul {
+      padding-left: 5px;
+      li {
+        font-size: 0.8em;
+        list-style: none;
+      }
+    }
+  }
+  .chapter p,
+  .chapter h2 {
+    font-family: $lato;
+    font-size: 1em;
+    font-style: italic;
+  }
+  .chapter h2 {
+    font-size: 2em;
+    font-family: $eb;
+    margin: 0;
+  }
+  .box {
+    padding: 0 10px;
+    margin-right: 100px;
+    background: white;
+    border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .chapter.right {
+    .box {
+      margin-left: 100px;
+      margin-right: 0;
+    }
+  }
+}
+
+#chapters #techniques {
+  margin-top: 0px;
+  top: 50px;
+  left: -50px;
+
+  .profile {
+    flex-direction: row;
+    display: flex;
+  }
+}
+
+#patient-cal-book-now-button {
+  margin-bottom: 10px;
+  transition: 2s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+img {
+  &.parallax {
+    position: absolute;
+    transition: 2s;
+    mix-blend-mode: multiply;
+    z-index: 100;
+    &.spine {
+      right: -50px;
+      transition: 2.5 !important;
+      transition-timing-function: ease-out;
+    }
+    &.shoulder {
+      transition: 2s;
+      left: auto;
+      top: 120px;
+    }
+    &.brain {
+      right: 0px;
+    }
+    &.body {
+      left: 0px;
+      z-index: 1;
+      opacity: 0.5;
+    }
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  &.multiply {
+    mix-blend-mode: multiply;
+  }
+}
+
+@import "contact";

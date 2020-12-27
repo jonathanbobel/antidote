@@ -1,0 +1,23 @@
+.therapist {
+  .row {
+    position: relative;
+    z-index: 101;
+  }
+  @media screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  img.headshot {
+    @media screen and (max-width: 992px) {
+      width: 60% !important;
+      margin: 0 20% 20px;
+    }
+  }
+  p {
+    b {
+      font-size: 24px;
+      font-family: $eb;
+    }
+  }
+}

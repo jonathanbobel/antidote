@@ -1,0 +1,216 @@
+nav.navbar {
+  background: transparent;
+  transition: 0.3s;
+  border-bottom: 1px solid $light-grey;
+  text-align: center;
+  height: 230px;
+  margin: 0;
+  background: $header;
+
+  @media screen and (max-width: 992px) {
+    height: auto;
+  }
+
+  p {
+    margin: 0;
+    line-height: 0.9;
+
+    &.logo_top {
+      font-size: 48px;
+    }
+    &.logo_bottom {
+      font-family: $lato;
+      font-size: 18px;
+      letter-spacing: 2.1px;
+      font-weight: 300;
+    }
+  }
+
+  .container {
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 230px;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      flex-direction: row;
+      height: 110px;
+      padding: 10px 0;
+    }
+  }
+
+  a.navbar-brand {
+    font-family: $eb;
+    color: $dark-grey;
+    flex-grow: 1;
+    margin-left: 0 !important;
+    width: 320px;
+    background: url(../img/ANTI_Logo_RGB_White.png) no-repeat;
+    background-size: 100%;
+    margin: 1em 0;
+    transition: 0.3s;
+    @media screen and (max-width: 992px) {
+      width: 220px;
+      height: 75px;
+      flex-grow: 0;
+      margin: 0;
+    }
+  }
+}
+
+.navbar-nav {
+  list-style: none;
+  transition: 0.3s;
+  flex-grow: 1;
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+  height: 52px;
+
+  @media screen and (max-width: 992px) {
+    height: 115px;
+    float: none;
+
+    a.navbar-brand {
+      margin: 0.8em 0 !important;
+      flex-grow: 0;
+    }
+
+    .container {
+      height: 120px !important;
+      flex-direction: row;
+    }
+  }
+
+  li {
+    margin: 0 10px;
+    a {
+      color: white;
+      font-family: $lato;
+      font-size: 1.2em;
+      font-weight: 300;
+      transition: 0.2s;
+      border: 1px solid white;
+      padding: 10px 15px;
+      border-radius: 5px;
+
+      &:hover {
+        text-decoration: none;
+        transition: 0.2s;
+        background-color: white;
+        color: $header;
+        // font-size: 1.25em;
+      }
+    }
+  }
+}
+
+.navbar-nav li a.selected {
+  opacity: 1;
+  transition: 0.2s;
+  background: white;
+  color: $header;
+}
+
+.navbar-nav li a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+.navbar.top {
+  background: $dark-grey;
+  li a:hover {
+    color: $dark-grey;
+  }
+}
+
+#mainNav {
+  @media screen and (max-width: 992px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+  }
+  &.responsive {
+    @media screen and (max-width: 992px) {
+      ul {
+        height: auto;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        li.nav-item {
+          display: flex;
+          width: 100%;
+          border-right: none;
+          border-left: none;
+          margin: 0;
+          border-top: 1px solid $dark-grey;
+          a {
+            border: none;
+            color: $dark-grey;
+            background: transparent;
+            padding: 9px 16px;
+            &:focus,
+            &:active {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .hamburger {
+        button {
+          background-color: white;
+          transition: 1s;
+          svg {
+            use,
+            path {
+              fill: $dark-grey;
+            }
+            &.lines {
+              display: none;
+            }
+            &.x {
+              width: 25px;
+              height: 25px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  li.nav-item {
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  .hamburger {
+    display: none;
+    height: 35px;
+    margin: 0;
+    button {
+      padding: 5px;
+      svg {
+        width: 25px;
+        height: 25px;
+        use,
+        path {
+          fill: white;
+        }
+        &.x {
+          display: none;
+        }
+      }
+    }
+    button {
+      background: none;
+      border: 0;
+    }
+    @media screen and (max-width: 992px) {
+      display: flex;
+    }
+  }
+}

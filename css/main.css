@@ -1,0 +1,154 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+html {
+    background-image: url(../img/vintage_speckles.png);
+    background-repeat: repeat;
+}
+
+nav.navbar {
+    background: transparent;
+    transition: 0.3s;
+}
+
+nav.navbar .container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-nav {
+    list-style: none; 
+}
+
+.navbar-nav li {
+    padding: 0 10px; 
+}
+
+.navbar-nav li a, a.navbar-brand {
+    color: black; 
+    font-family: 'Bellefair', serif;
+    font-size: 1.4em;
+}
+
+.navbar-nav li a.selected {
+    text-decoration: underline !important;
+}
+
+.navbar-nav li a:focus, .navbar-nav li a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+.navbar.top {
+    background: rgba(0,0,0,0.6); 
+    transition: 0.3s; 
+    border-bottom: 1px solid black;
+}
+
+.navbar.top li a, .navbar.top a.navbar-brand {
+    color: white; 
+}
+
+#chapters {
+    background-image: url(../img/arm_grays.png);
+    background-size: 35%;
+    background-position: top center;
+    backround-color: transparent;
+    background-repeat: no-repeat;
+    min-height: 1850px;
+    position: relative; 
+    width: 980px;
+    margin: 0 auto;
+}
+
+.right .line {
+    width: 1px;
+    height: 1px;
+    background:black;
+    /*background-position: left top;*/
+    *-webkit-transition: width .1s;
+    position:absolute;
+    top:33px; left:0; 
+}
+
+.left .line {
+    width: 1px;
+    height: 1px;
+    background:black;
+    /*background-position: left top;*/
+    *-webkit-transition: width .1s;
+    position:absolute;
+    top:33px; right:0; 
+}
+
+#chapters .chapter p, #chapters .chapter h1 {
+    padding-left: 120px;
+    font-family: 'Bellefair', serif;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#chapters .chapter h1 {
+    font-size: 2em;
+}
+
+#chapters .chapter.left { 
+    width: 400px; 
+
+}
+
+#chapters .chapter.right { 
+    width: 400px; 
+
+}
+
+#chapters .chapter.left p, #chapters .chapter.left h1 {
+    padding-right: 120px; 
+    padding-left: 0;
+}
+
+#chapters .chapter {
+    min-height: 200px;
+    position: relative;
+    margin: 50px 0; 
+    position: absolute; 
+}
+
+#chapters #part1 {
+    margin-top: 0px; 
+    top: 200px; 
+    left: 20px; 
+}
+
+#chapters #part2 {
+    top: 500px; 
+    right: 0px; 
+}
+#chapters #part3 {
+    top: 800px; 
+    left: 20px; 
+}
+#chapters #part4 {
+    top: 1200px; 
+    right: 50px; 
+}
+
+
+
+
+
+
+
+
+
+

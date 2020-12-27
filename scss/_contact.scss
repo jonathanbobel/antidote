@@ -1,0 +1,113 @@
+#contact {
+  .container {
+    &.contact {
+      //max-width: 660px;
+      text-align: center;
+      margin: 0 1em;
+
+      a {
+        font-size: 1em;
+        padding: 2px 0 10px;
+        opacity: 0.6;
+        transition: 1s;
+
+        &:visited,
+        &:focus {
+          text-decoration: none;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      form {
+        label {
+          font-family: $lato;
+          font-size: 1.2em;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding-left: 0;
+          margin-bottom: 0;
+          text-align: left;
+        }
+        input,
+        textarea {
+          font-family: $lato;
+          border-radius: 0;
+          background: rgba(0, 0, 0, 0.1);
+          &.ng-dirty {
+            background-color: white;
+          }
+        }
+        button.btn {
+          background: #0c6482;
+          border-radius: 0;
+          color: white;
+          font-family: $lato;
+          text-transform: uppercase;
+          font-size: 1.2em;
+          float: right;
+        }
+      }
+      p.result {
+        font-family: $eb;
+      }
+    }
+  }
+}
+
+.map {
+  -webkit-filter: grayscale(70%);
+  -moz-filter: grayscale(70%);
+  -ms-filter: grayscale(70%);
+  -o-filter: grayscale(70%);
+  filter: grayscale(70%);
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
+  margin-bottom: 20px;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+footer {
+  padding: 10px;
+  border-top: 1px solid $dark-grey;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    li {
+      list-style: none;
+      font-weight: 200;
+      p {
+        margin: 0;
+        font-size: 14px;
+      }
+      a {
+        font-size: 14px;
+        color: $dark-grey;
+        &:hover {
+          color: $light-grey;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
