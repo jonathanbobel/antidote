@@ -3,6 +3,7 @@
 @import "treatment";
 @import "therapist";
 @import "partners";
+@import "utility";
 
 /* ==========================================================================
    Author's custom styles
@@ -94,7 +95,7 @@ h1 {
 
     &:hover {
       opacity: 1;
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 
@@ -126,6 +127,9 @@ h1 {
     @media screen and (max-width: 992px) {
       width: 100%;
       margin: 0;
+    }
+    img {
+      width: 70%; 
     }
     .definition {
       color: $definition;
@@ -271,6 +275,7 @@ h1 {
   transition: 2s;
   &:hover {
     opacity: 1;
+    text-decoration: none;
   }
 }
 
