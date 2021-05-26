@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $(this).scrollTop(0);
 
-  $("nav.main a , .jumbotron.first a").bind("click", function(event) {
-    event.preventDefault();
+  $("nav.main a, .jumbotron.first a").bind("click", function(event) {
+    //event.preventDefault();
     $(this).blur();
     var target = $(this).attr("href");
     $("html, body")
