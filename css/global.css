@@ -598,7 +598,8 @@ h1 {
           bottom: -18px; } }
   .jumbotron a {
     font-size: 1em;
-    color: #414547; }
+    color: #414547;
+    background: light-grey; }
     .jumbotron a:hover {
       opacity: 1;
       text-decoration: underline; }
@@ -613,6 +614,30 @@ h1 {
     height: 100px;
     background: #414547;
     padding: 35px 0 20px; }
+    .jumbotron.book ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0; }
+      .jumbotron.book ul li:first-child {
+        background: transparent; }
+      .jumbotron.book ul li a {
+        border-radius: 5px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        background: #e6e4e4;
+        margin: 0 12px 10px;
+        width: 215px;
+        height: 51px;
+        text-decoration: none; }
+        .jumbotron.book ul li a:hover {
+          background: white; }
   .jumbotron.about {
     display: flex;
     flex-direction: row;
@@ -764,6 +789,20 @@ img.parallax {
 
 img.multiply {
   mix-blend-mode: multiply; }
+
+#mc_embed_signup {
+  background: transparent !important; }
+  #mc_embed_signup #mc_embed_signup_scroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    #mc_embed_signup #mc_embed_signup_scroll label {
+      padding: 0; }
+    #mc_embed_signup #mc_embed_signup_scroll label, #mc_embed_signup #mc_embed_signup_scroll input {
+      margin: 0 12px 0 0;
+      max-width: 400px;
+      font-family: "Lato", sans-serif !important; }
 
 #contact .container.contact {
   text-align: center;
